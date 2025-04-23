@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [
+    { "src": "build/web/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/assets/(.*)", "dest": "/build/web/assets/$1" },
+    { "src": "/canvaskit/(.*)", "dest": "/build/web/canvaskit/$1" },
+    { "src": "/icons/(.*)", "dest": "/build/web/icons/$1" },
+    { "src": "/(.*\\.[^/]*)", "dest": "/build/web/$1" },
+    { "src": "/(.*)", "dest": "/build/web/index.html" }
+  ]
+}
