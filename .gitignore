@@ -35,7 +35,6 @@ macos/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
 
 # Exclude everything in build except web
 !/build/web/
