@@ -37,6 +37,9 @@ macos/
 .pub/
 /build/
 
+# Exclude everything in build except web
+!/build/web/
+
 # Symbolication related
 app.*.symbols
 
